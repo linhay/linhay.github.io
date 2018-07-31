@@ -1,31 +1,59 @@
 {
   "warnings": [
     {
-      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": null,
-      "symbol": "Routable",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Cache.swift",
+      "line": 26,
+      "symbol": "Routable_Cache",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": null,
-      "symbol": "Routable",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Cache.swift",
+      "line": 26,
+      "symbol": "Routable_Cache",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": null,
-      "symbol": "Routable",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Cache.swift",
+      "line": 26,
+      "symbol": "Routable_Cache",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": null,
-      "symbol": "Routable",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Cache.swift",
+      "line": 26,
+      "symbol": "Routable_Cache",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Configs.swift",
+      "line": 26,
+      "symbol": "Routable_Configs",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Configs.swift",
+      "line": 26,
+      "symbol": "Routable_Configs",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Configs.swift",
+      "line": 26,
+      "symbol": "Routable_Configs",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable+Configs.swift",
+      "line": 26,
+      "symbol": "Routable_Configs",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
@@ -150,29 +178,85 @@
     {
       "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
       "line": 26,
+      "symbol": "RoutableBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 26,
+      "symbol": "RoutableBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 26,
+      "symbol": "RoutableBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 26,
+      "symbol": "RoutableBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 28,
       "symbol": "Routable",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "Routable",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "Routable",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
-      "line": 26,
+      "line": 28,
       "symbol": "Routable",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 57,
+      "symbol": "Routable.cache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 57,
+      "symbol": "Routable.cache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 57,
+      "symbol": "Routable.cache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/多平台/Routable/Sources/Routable.swift",
+      "line": 57,
+      "symbol": "Routable.cache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     }
   ],
