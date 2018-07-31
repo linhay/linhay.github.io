@@ -191,20 +191,6 @@
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
-      "line": null,
-      "symbol": "SPExtension",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
-      "line": null,
-      "symbol": "SPExtension",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
       "line": 25,
       "symbol": "SPExtension",
       "symbol_kind": "source.lang.swift.decl.struct",
@@ -772,112 +758,112 @@
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 45,
+      "line": 46,
       "symbol": "SPExtension.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 45,
+      "line": 46,
       "symbol": "SPExtension.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "SPExtension.dequeueCell(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "SPExtension.dequeueCell(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 57,
+      "line": 58,
       "symbol": "SPExtension.registerHeaderFooterView(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 57,
+      "line": 58,
       "symbol": "SPExtension.registerHeaderFooterView(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 65,
+      "line": 66,
       "symbol": "SPExtension.dequeueHeaderFooterView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 65,
+      "line": 66,
       "symbol": "SPExtension.dequeueHeaderFooterView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 72,
+      "line": 73,
       "symbol": "SPExtension.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 72,
+      "line": 73,
       "symbol": "SPExtension.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 80,
+      "line": 81,
       "symbol": "SPExtension.dequeueCell(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 80,
+      "line": 81,
       "symbol": "SPExtension.dequeueCell(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 84,
+      "line": 85,
       "symbol": "SPExtension.registerSupplementaryView(elementKind:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 84,
+      "line": 85,
       "symbol": "SPExtension.registerSupplementaryView(elementKind:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 96,
+      "line": 97,
       "symbol": "SPExtension.dequeueSupplementaryView(elementKind:indexPath:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UICell/SP+UICell.swift",
-      "line": 96,
+      "line": 97,
       "symbol": "SPExtension.dequeueSupplementaryView(elementKind:indexPath:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

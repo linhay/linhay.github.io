@@ -923,20 +923,6 @@
       "symbol": "UILabel.textInset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UIViewController/SP+UIViewController.swift",
-      "line": 41,
-      "symbol": "SPExtension.isByPresented",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/UIViewController/SP+UIViewController.swift",
-      "line": 41,
-      "symbol": "SPExtension.isByPresented",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/linhey/Desktop/Github/SPKit"
