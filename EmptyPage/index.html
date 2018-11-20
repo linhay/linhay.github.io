@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EmptyPage  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="EmptyPage  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">EmptyPage Docs</a> (52% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">EmptyPage Reference</a>
+        <img id="carat" src="img/carat.png" />
+        EmptyPage  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForImage.html">EmptyPageForImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForImage/HSpaceType.html">– HSpaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForStandard.html">EmptyPageForStandard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForStandard/HeightType.html">– HeightType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForStandard/VSpaceType.html">– VSpaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForStandard/HSpaceType.html">– HSpaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForText.html">EmptyPageForText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageForText/HSpaceType.html">– HSpaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageView.html">EmptyPageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EmptyPageView/ContentView.html">– ContentView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/UIScrollView.html">UIScrollView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EmptyPageContentViewProtocol.html">EmptyPageContentViewProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:9EmptyPageAAV">EmptyPage</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="./imgs/title.png" alt="title"></p>
+
+<p><a href="https://travis-ci.org/BLFoundation/EmptyPage"><img src="https://travis-ci.org/linhay/EmptyPage.svg?branch=master" alt="build"></a>
+<img src="https://img.shields.io/badge/swift-4.0-green.svg?style=flat" alt="Swift4">
+<img src="https://img.shields.io/cocoapods/p/EmptyPage.svg?style=flat" alt="Platform">
+<img src="https://img.shields.io/cocoapods/v/EmptyPage.svg?style=flat" alt="Version">
+<img src="https://img.shields.io/badge/dep-CocoaPods-orange.svg" alt="CocoaPods">
+<img src="https://img.shields.io/badge/license-MIT-lightgray.svg" alt="MIT"></p>
+<h1 id='emptypage' class='heading'>EmptyPage</h1>
+<h5 id='swift' class='heading'>一套应用于swift项目的空白页.可利用预置的模板快速构建空白页视图.亦可高度自定义视图搭建炫酷的交互.</h5>
+<h5 id='ps-oc-a-href-https-github-com-dzenbot-dznemptydataset-strong-dznemptydataset-strong-a' class='heading'>ps: oc项目可以使用<a href="https://github.com/dzenbot/DZNEmptyDataSet"><strong>DZNEmptyDataSet</strong></a>替代.</h5>
+<h3 id='' class='heading'>简介</h3>
+
+<p>app 显示列表内容时, 在某一时刻可能数据为空(等待网络请求/网络请求失败)等, 添加一个空白指示页将有效缓解用户可能造成的焦虑或混乱. 并可以帮助用户处理问题.</p>
+<h3 id='features' class='heading'>Features</h3>
+
+<ul>
+<li><p>[x] 支持UICollectionView &amp; UITableView.</p></li>
+<li><p>[x] 支持链式配置预置模板视图.</p></li>
+<li><p>[x] 支持完全自定义视图.</p></li>
+<li><p>[ ] 支持更多实用与设计感的模板.</p></li>
+<li><p>[ ] 支持Objc 或提供独立的 Objc 组件库.</p></li>
+</ul>
+
+<table><thead>
+<tr>
+<th style="text-align: center"><img src="https://s.linhey.com/emptyPage-08.gif" alt=""></th>
+<th style="text-align: center"><img src="https://s.linhey.com/emptyPage-07.gif" alt=""></th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+</tr>
+</tbody></table>
+<h3 id='' class='heading'>预置模板视图(纯文字/纯图片/标准)</h3>
+
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><img src="https://s.linhey.com/emptyPage-03.png" alt="文字模板"></td>
+<td><img src="https://s.linhey.com/emptyPage-04.png" alt="图片模板"></td>
+<td><img src="https://s.linhey.com/emptyPage-02.png" alt="混合模板"></td>
+</tr>
+</tbody></table>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Swift 4</li>
+<li>iOS 8+</li>
+<li>Xcode 10+</li>
+</ul>
+<h2 id='' class='heading'>安装</h2>
+
+<ul>
+<li>使用cocoapods安装</li>
+</ul>
+
+<p>##### 完全安装</p>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'EmptyPage'</span>
+</code></pre>
+
+<p>##### 不需要预置模板安装</p>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'EmptyPage/Core'</span>
+</code></pre>
+<h2 id='' class='heading'>使用</h2>
+<h3 id='' class='heading'>简单用法</h3>
+<h5 id='in-swift' class='heading'>In Swift:</h5>
+
+<ul>
+<li>配置空白页</li>
+</ul>
+<pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">emptyView</span> <span class="o">=</span> <span class="kt">EmptyPageView</span><span class="o">.</span><span class="kt">ContentView</span><span class="o">.</span><span class="n">standard</span>
+    <span class="o">.</span><span class="nf">change</span><span class="p">(</span><span class="nv">hspace</span><span class="p">:</span> <span class="o">.</span><span class="n">button</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">80</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">change</span><span class="p">(</span><span class="nv">height</span><span class="p">:</span> <span class="o">.</span><span class="n">button</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">change</span><span class="p">(</span><span class="nv">hspace</span><span class="p">:</span> <span class="o">.</span><span class="n">image</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">config</span><span class="p">(</span><span class="nv">button</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">in</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">blue</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">contentEdgeInsets</span> <span class="o">=</span> <span class="kt">UIEdgeInsets</span><span class="p">(</span><span class="nv">top</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="nv">left</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="nv">bottom</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="nv">right</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"empty-1002"</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Connection failure"</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">boldSystemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">24</span><span class="p">))</span>
+    <span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"Something has gone wrong with the internet connection. Let's give it another shot."</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">font</span><span class="p">:</span> <span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">15</span><span class="p">))</span>
+    <span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="nv">buttonTitle</span><span class="p">:</span> <span class="s">"TRY AGAIN"</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="nv">tap</span><span class="p">:</span> <span class="p">{</span>
+    <span class="c1">// 点击事件</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="nf">mix</span><span class="p">()</span>
+</code></pre>
+
+<ul>
+<li>设置空白页</li>
+</ul>
+<pre class="highlight swift"><code>  <span class="n">tableView</span><span class="o">.</span><span class="nf">setEmpty</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="n">emptyView</span><span class="p">)</span>
+  <span class="n">collectionView</span><span class="o">.</span><span class="nf">setEmpty</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="n">emptyView</span><span class="p">)</span>
+</code></pre>
+
+<ul>
+<li>空白页显示与切换</li>
+</ul>
+
+<p>如果需要切换已显示的空白页可主动触发刷新.</p>
+<pre class="highlight swift"><code>  <span class="n">tableView</span><span class="o">.</span><span class="nf">setEmpty</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="n">emptyView</span><span class="p">)</span>
+  <span class="n">tableView</span><span class="o">.</span><span class="nf">reloadData</span><span class="p">()</span>
+</code></pre>
+<h5 id='' class='heading'>原理与介绍:</h5>
+
+<p><a href="https://www.linhey.com/2018/01/28/%5BiOS%5DEmptyPage(%E7%A9%BA%E7%99%BD%E9%A1%B5%E7%BB%84%E4%BB%B6)%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/">EmptyPage(空白页组件)介绍与使用</a></p>
+<h3 id='api' class='heading'>API</h3>
+<h5 id='jazzy-bug' class='heading'>由于jazzy bug, 仍在施工中&hellip;</h5>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>linhay: <a href="mailto:is.linhay@outlook.com">is.linhay@outlook.com</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>EmptyPage is available under the Apache License. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/linhay/EmptyPage" target="_blank" rel="external">linhay</a>. All rights reserved. (Last updated: 2018-11-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
