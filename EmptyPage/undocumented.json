@@ -2,42 +2,42 @@
   "warnings": [
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "UIScrollView.oldEmptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "UIScrollView.oldEmptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "UIScrollView.oldEmptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 45,
+      "line": 47,
       "symbol": "UIScrollView.emptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 45,
+      "line": 47,
       "symbol": "UIScrollView.emptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Sources/Empty+UIScrollView.swift",
-      "line": 45,
+      "line": 47,
       "symbol": "UIScrollView.emptyView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
