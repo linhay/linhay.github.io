@@ -65,520 +65,296 @@
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "line": 29,
+      "symbol": "EmptyPageForImage.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "line": 29,
+      "symbol": "EmptyPageForImage.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": null,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 25,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 25,
-      "symbol": "EmptyPageForImage",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 33,
+      "line": 35,
       "symbol": "EmptyPageForImage.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 33,
+      "line": 35,
       "symbol": "EmptyPageForImage.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 38,
+      "line": 40,
       "symbol": "EmptyPageForImage.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 38,
+      "line": 40,
       "symbol": "EmptyPageForImage.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "EmptyPageForImage.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 43,
+      "line": 45,
       "symbol": "EmptyPageForImage.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 57,
+      "line": 59,
       "symbol": "EmptyPageForImage.HSpaceType.image",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForImage.swift",
-      "line": 57,
+      "line": 59,
       "symbol": "EmptyPageForImage.HSpaceType.image",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": null,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 25,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 25,
-      "symbol": "EmptyPageForStandard",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 62,
+      "line": 65,
       "symbol": "EmptyPageForStandard.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 62,
+      "line": 65,
       "symbol": "EmptyPageForStandard.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 67,
+      "line": 70,
       "symbol": "EmptyPageForStandard.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 67,
+      "line": 70,
       "symbol": "EmptyPageForStandard.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 72,
+      "line": 75,
       "symbol": "EmptyPageForStandard.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 72,
+      "line": 75,
       "symbol": "EmptyPageForStandard.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 227,
+      "line": 90,
       "symbol": "EmptyPageForStandard.HeightType.button",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 227,
+      "line": 90,
       "symbol": "EmptyPageForStandard.HeightType.button",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 261,
+      "line": 125,
       "symbol": "EmptyPageForStandard.VSpaceType.imageTop",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 261,
+      "line": 125,
       "symbol": "EmptyPageForStandard.VSpaceType.imageTop",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 262,
+      "line": 126,
       "symbol": "EmptyPageForStandard.VSpaceType.imageWithTitle",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 262,
+      "line": 126,
       "symbol": "EmptyPageForStandard.VSpaceType.imageWithTitle",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 263,
+      "line": 127,
       "symbol": "EmptyPageForStandard.VSpaceType.titleWithText",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 263,
+      "line": 127,
       "symbol": "EmptyPageForStandard.VSpaceType.titleWithText",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 264,
+      "line": 128,
       "symbol": "EmptyPageForStandard.VSpaceType.textWithButton",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 264,
+      "line": 128,
       "symbol": "EmptyPageForStandard.VSpaceType.textWithButton",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 322,
+      "line": 187,
       "symbol": "EmptyPageForStandard.HSpaceType.image",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 322,
+      "line": 187,
       "symbol": "EmptyPageForStandard.HSpaceType.image",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 323,
+      "line": 188,
       "symbol": "EmptyPageForStandard.HSpaceType.title",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 323,
+      "line": 188,
       "symbol": "EmptyPageForStandard.HSpaceType.title",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 324,
+      "line": 189,
       "symbol": "EmptyPageForStandard.HSpaceType.text",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 324,
+      "line": 189,
       "symbol": "EmptyPageForStandard.HSpaceType.text",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 325,
+      "line": 190,
       "symbol": "EmptyPageForStandard.HSpaceType.button",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForStandard.swift",
-      "line": 325,
+      "line": 190,
       "symbol": "EmptyPageForStandard.HSpaceType.button",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": null,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 25,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 25,
-      "symbol": "EmptyPageForText",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "EmptyPageForText.label",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "EmptyPageForText.label",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 35,
+      "line": 38,
       "symbol": "EmptyPageForText.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 35,
+      "line": 38,
       "symbol": "EmptyPageForText.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 40,
+      "line": 43,
       "symbol": "EmptyPageForText.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 40,
+      "line": 43,
       "symbol": "EmptyPageForText.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 55,
+      "line": 59,
       "symbol": "EmptyPageForText.HSpaceType.text",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageForText.swift",
-      "line": 55,
+      "line": 59,
       "symbol": "EmptyPageForText.HSpaceType.text",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": null,
-      "symbol": "EmptyPageContentViewProtocol",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": null,
-      "symbol": "EmptyPageContentViewProtocol",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 25,
-      "symbol": "EmptyPageContentViewProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 25,
-      "symbol": "EmptyPageContentViewProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 39,
-      "symbol": "EmptyPageView",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 39,
-      "symbol": "EmptyPageView",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 84,
-      "symbol": "EmptyPageView.ContentView",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyPageView.swift",
-      "line": 84,
-      "symbol": "EmptyPageView.ContentView",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyView+UIScrollView.swift",
-      "line": 28,
-      "symbol": "UIScrollView.setEmpty(view:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/linhey/Desktop/Github/EmptyPage/Standard/EmptyView+UIScrollView.swift",
-      "line": 28,
-      "symbol": "UIScrollView.setEmpty(view:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
