@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Khala  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Khala  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Khala Docs</a> (67% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Khala Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Khala  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Khala.html">Khala</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/KhalaNotify.html">KhalaNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PseudoClass.html">PseudoClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PseudoMethod.html">PseudoMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RewriteFilter.html">RewriteFilter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/KhalaHistory.html">KhalaHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:@M@Khala@objc(pl)KhalaProtocol">KhalaProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/KhalaRewrite.html">KhalaRewrite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/KhalaURLValue.html">KhalaURLValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:5Khala0A7Closurea">KhalaClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/KhalaView">KhalaView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:5Khala0A4Viewa">KhalaView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/KhalaViewController">KhalaViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:5Khala0A14ViewControllera">KhalaViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='khala' class='heading'>Khala</h1>
+
+<p><a href="https://travis-ci.org/linhay/Khala"><img src="https://img.shields.io/travis/linhay/Khala.svg?style=flat" alt="CI Status"></a>
+<a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/v/Khala.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/l/Khala.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/p/Khala.svg?style=flat" alt="Platform"></a></p>
+
+<p><img src="https://s.linhey.com/khala.png" alt=""></p>
+
+<p>Swift 路由和模块通信解耦工具和规范。 可以让模块间无耦合的调用服务、页面跳转。</p>
+
+<blockquote>
+<p>English Introduction</p>
+</blockquote>
+<h2 id='' class='heading'>安装</h2>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Khala'</span>
+</code></pre>
+<h2 id='' class='heading'>使用</h2>
+<h2 id='' class='heading'>调用</h2>
+
+<ol>
+<li><strong>普通调用</strong></li>
+</ol>
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/server?info=ok"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span>
+   <span class="c1">// value is Any?</span>
+</code></pre>
+
+<ol>
+<li><strong>带block调用</strong></li>
+</ol>
+
+<ul>
+<li><strong>单个block</strong></li>
+<li><strong>多个block</strong></li>
+</ul>
+
+<ol>
+<li><strong>特例调用</strong></li>
+</ol>
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/vc?style=0"</span><span class="p">)?</span><span class="o">.</span><span class="n">viewController</span>
+   <span class="c1">// value is UIViewController or NSViewController</span>
+</code></pre>
+
+<ol>
+<li><strong>通知调用</strong></li>
+</ol>
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">KhalaNotify</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://double?test=666"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span>
+   <span class="c1">// value is [Any]</span>
+</code></pre>
+
+<ol>
+<li><strong>Rewrite</strong></li>
+</ol>
+
+<ul>
+<li><strong>使用</strong></li>
+<li><strong>自定义</strong></li>
+</ul>
+
+<ol>
+<li><strong>History</strong></li>
+</ol>
+
+<ul>
+<li><strong>使用</strong></li>
+<li><strong>自定义</strong></li>
+</ul>
+
+<ol>
+<li><strong>PseudoClass</strong></li>
+</ol>
+
+<ul>
+<li><p><strong>PseudoClass.cache</strong></p>
+
+<p>路由类初始化后会被添加至该属性中缓存,以减少查找与实例化这部分性能.</p>
+
+<p>你可以使用该属性<strong>释放指定或全部路由类</strong>.</p></li>
+<li><p><strong>PseudoClass().instance</strong></p>
+
+<p>路由类实例.</p></li>
+<li><p><strong>PseudoClass().methodLists</strong></p>
+
+<p>路由类实例中函数列表, 路由函数查询只会查询此列表中的函数.</p>
+
+<p>​</p></li>
+</ul>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>linhay, <a href="mailto:is.linhay@outlook.com">is.linhay@outlook.com</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Khala is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/linhay/Khala" target="_blank" rel="external">linhey</a>. All rights reserved. (Last updated: 2018-12-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

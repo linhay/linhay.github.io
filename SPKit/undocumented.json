@@ -191,6 +191,20 @@
     },
     {
       "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
+      "line": null,
+      "symbol": "SPExtension",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
+      "line": null,
+      "symbol": "SPExtension",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/linhey/Desktop/Github/SPKit/Sources/Core/SP+Extension.swift",
       "line": 25,
       "symbol": "SPExtension",
       "symbol_kind": "source.lang.swift.decl.struct",
