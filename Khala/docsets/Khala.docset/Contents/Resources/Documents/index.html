@@ -13,7 +13,7 @@
     <a title="Khala  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Khala Docs</a> (67% documented)</p>
+        <p><a href="index.html">Khala Docs</a> (78% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -34,6 +34,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/KhalaNotify.html">KhalaNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:@M@Khala@objc(cs)KhalaStore">KhalaStore</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/PseudoClass.html">PseudoClass</a>
@@ -89,94 +92,445 @@
         <section>
           <section class="section">
             
-            <h1 id='khala' class='heading'>Khala</h1>
+            <h1 id='a-href-https-github-com-linhay-khala-khala-a' class='heading'><a href="https://github.com/linhay/Khala">Khala</a></h1>
+
+<p><img src="https://s.linhey.com/khala.png" alt=""></p>
 
 <p><a href="https://travis-ci.org/linhay/Khala"><img src="https://img.shields.io/travis/linhay/Khala.svg?style=flat" alt="CI Status"></a>
 <a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/v/Khala.svg?style=flat" alt="Version"></a>
 <a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/l/Khala.svg?style=flat" alt="License"></a>
 <a href="https://cocoapods.org/pods/Khala"><img src="https://img.shields.io/cocoapods/p/Khala.svg?style=flat" alt="Platform"></a></p>
 
-<p><img src="https://s.linhey.com/khala.png" alt=""></p>
-
 <p>Swift 路由和模块通信解耦工具和规范。 可以让模块间无耦合的调用服务、页面跳转。</p>
 
 <blockquote>
-<p>English Introduction</p>
+<p><a href="./readme_en.md"><strong>English Introduction</strong></a></p>
 </blockquote>
+<h2 id='' class='heading'>任务列表</h2>
+
+<ul>
+<li>[ ] 完善demo示例.</li>
+<li>[ ] 日志模块采用<em>mmap</em>读写(解决crash部分日志未写入文件).</li>
+<li>[ ] 英文注释与文档.</li>
+</ul>
+<h2 id='' class='heading'>要求</h2>
+
+<ul>
+<li><p><strong>iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+</strong></p></li>
+<li><p><strong>Swift 4.x</strong></p></li>
+</ul>
 <h2 id='' class='heading'>安装</h2>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Khala'</span>
 </code></pre>
 <h2 id='' class='heading'>使用</h2>
-<h2 id='' class='heading'>调用</h2>
+
+<ol>
+<li><strong>路由类</strong></li>
+</ol>
+
+<p><strong>定义:</strong> 负责接收处理url的函数集合类.</p>
+
+<p><strong>限制:</strong> </p>
+<pre class="highlight plaintext"><code>1. 路由类必须继承自 `NSObject`
+
+2. 需要添加`@objc(class_name) `要防止编译器移除该类.
+
+   &gt; 编译器会在编译时检查swift文件中未被调用的类,并移除.(&gt;= swift 3.0)
+</code></pre>
+
+<p><strong>示例:</strong></p>
+<pre class="highlight swift"><code>   <span class="c1">// 推荐</span>
+   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">server1</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="kd">func</span> <span class="nf">server2</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="kd">@objc(BModule)</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="kd">@objc</span> <span class="kd">func</span> <span class="nf">server1</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="kd">@objc</span> <span class="kd">func</span> <span class="nf">server2</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+   <span class="p">}</span>
+</code></pre>
+
+<blockquote>
+<p>ps: 若非必要,无需提前注册路由类. </p>
+</blockquote>
+
+<ol>
+<li><strong>路由函数</strong></li>
+</ol>
+
+<p><strong>定义:</strong> 负责处理具体的业务场景/功能.</p>
+
+<p><strong>限制:</strong></p>
+<pre class="highlight plaintext"><code>1. **不支持**函数重载.例如:
+
+   ```swift
+   @objc(AModule) @objcMembers
+   class AModule: NSObject {
+    func server(_ info: [String: Any]) -&gt; Int { ... }
+    func server(_ info: [String: Any], closure: KhalaClosure) -&gt; Int { ... }
+   }
+   ```
+
+   &gt; 缘由: khala 缓存了路由类中的函数列表, 键名为第一个`:`前的字符串.
+
+2. **推荐**第一个参数采用匿名参数,方便阅读.
+
+3. 参数格式**只支持**
+
+   - 单个: `[AnyHashable: Any]`, 无顺序要求:
+
+   - 多个: `KhalaClosure`, 有顺序要求:
+
+     ```swift
+     typealias KhalaClosure = @convention(block) (_ useInfo: [String: Any]) -&gt; Void
+     ```
+
+   **示例:**
+
+   ```swift
+   @objc(AModule) @objcMembers
+   class AModule: NSObject {
+    func server1() -&gt; Int { ... }
+    func server2(info: [String: Any]) -&gt; Int { ... }
+    func server3(_ info: [String: Any]) -&gt; Int { ... }
+    func server4(_ info: [String: Any], closure: KhalaClosure) -&gt; Int { ... }
+    func server5(_ info: [String: Any], success: KhalaClosure,failure: KhalaClosure, 
+   complete: KhalaClosure) -&gt; Int { ... }
+     func server6(_ success: KhalaClosure,failure: KhalaClosure, info: [String: Any],
+   complete: KhalaClosure) -&gt; Int { ... }
+   }
+   ```
+
+   &gt; 缘由:
+   &gt;
+   &gt;  `block` 为结构体类型,无法抽象出基类或者协议.
+   &gt;
+   &gt; `[String: Any]` 会适当的插入 `[KhalaClosure]`中组成参数列表.
+   &gt;
+   &gt; ps: 调用方 `KhalaClosure` 数目需要比路由函数多或者持平.否则会触发断言.
+</code></pre>
+
+<ol>
+<li><strong><em>Khala</em></strong> 初始化函数</li>
+</ol>
+
+<ul>
+<li><code>params</code>中的参数会保持传入的类型,例如传递 <code>UIImage</code>等对象.</li>
+</ul>
+<pre class="highlight swift"><code>   <span class="kd">public</span> <span class="kd">class</span> <span class="kt">Khala</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:])</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+    <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">str</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:])</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span> 
+   <span class="p">}</span>
+</code></pre>
 
 <ol>
 <li><strong>普通调用</strong></li>
 </ol>
-<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/server?info=ok"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span>
-   <span class="c1">// value is Any?</span>
+
+<p>适用于非异步场景.</p>
+<pre class="highlight swift"><code>   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">server</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="n">info</span><span class="p">[</span><span class="s">"value"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">Int</span> <span class="p">??</span> <span class="mi">0</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">server2</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+      <span class="k">guard</span> <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="s">"value"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">String</span><span class="p">,</span> <span class="k">let</span> <span class="nv">res</span> <span class="o">=</span> <span class="kt">Int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">0</span> <span class="p">}</span>
+      <span class="k">return</span> <span class="n">res</span>
+    <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="c1">// 1. 保持参数类型</span>
+   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/server"</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="s">"value"</span><span class="p">:</span> <span class="mi">46</span><span class="p">])?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span> <span class="k">as?</span> <span class="kt">Int</span>
+   <span class="nf">print</span><span class="p">(</span><span class="n">value</span> <span class="p">??</span> <span class="s">"nil"</span><span class="p">)</span>
+
+   <span class="c1">/// Print</span>
+   <span class="c1">// 46</span>
+
+   <span class="c1">// 2. 不保持参数类型,(url中参数类型皆为String)</span>
+   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/server2?value=64"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span> <span class="k">as?</span> <span class="kt">Int</span>
+   <span class="nf">print</span><span class="p">(</span><span class="n">value</span> <span class="p">??</span> <span class="s">"nil"</span><span class="p">)</span>
+
+   <span class="c1">/// Print</span>
+   <span class="c1">// 64</span>
 </code></pre>
 
 <ol>
 <li><strong>带block调用</strong></li>
 </ol>
 
-<ul>
-<li><strong>单个block</strong></li>
-<li><strong>多个block</strong></li>
-</ul>
+<p>适用于延时或者异步场景.</p>
+
+<p><strong>示例:</strong></p>
+<pre class="highlight swift"><code>   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+
+     <span class="kd">func</span> <span class="nf">forClosure</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:</span> <span class="kt">KhalaClosure</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nf">closure</span><span class="p">([</span><span class="s">"value"</span><span class="p">:</span> <span class="kd">#function</span><span class="p">])</span>
+     <span class="p">}</span>
+
+     <span class="kd">func</span> <span class="nf">forClosures</span><span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">KhalaClosure</span><span class="p">,</span> <span class="nv">failure</span><span class="p">:</span> <span class="kt">KhalaClosure</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nf">success</span><span class="p">([</span><span class="s">"success"</span><span class="p">:</span> <span class="kd">#function</span><span class="p">])</span>
+       <span class="nf">failure</span><span class="p">([</span><span class="s">"failure"</span><span class="p">:</span> <span class="kd">#function</span><span class="p">])</span>
+     <span class="p">}</span>
+
+   <span class="p">}</span>
+
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kf://AModule/forClosure"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">(</span><span class="nv">block</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"forClosure:"</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+   <span class="p">})</span>
+
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kf://AModule/forClosures"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">(</span><span class="nv">blocks</span><span class="p">:</span> <span class="p">[{</span> <span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"forClosures block1:"</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+    <span class="p">},{</span> <span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">in</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"forClosure block2:"</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+   <span class="p">}])</span>
+
+   <span class="c1">/// Print</span>
+   <span class="c1">// forClosure: ["value": "forClosure"]</span>
+   <span class="c1">// forClosures block1: ["success": "forClosures(_:failure:)"]</span>
+   <span class="c1">// forClosure block2: ["failure": "forClosures(_:failure:)"]</span>
+</code></pre>
 
 <ol>
 <li><strong>特例调用</strong></li>
 </ol>
-<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/vc?style=0"</span><span class="p">)?</span><span class="o">.</span><span class="n">viewController</span>
-   <span class="c1">// value is UIViewController or NSViewController</span>
+
+<p>提供特定类型返回.详情查看: <a href="https://linhay.github.io/Khala/Classes/Khala.html#/%E5%BF%AB%E6%8D%B7%E5%87%BD%E6%95%B02"><strong>快捷函数</strong></a></p>
+<pre class="highlight swift"><code>   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+       <span class="kd">func</span> <span class="nf">vc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+           <span class="k">return</span> <span class="kt">UIViewController</span><span class="p">()</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule/vc?style=0"</span><span class="p">)?</span><span class="o">.</span><span class="n">viewController</span>
+   <span class="c1">// value is UIViewController</span>
 </code></pre>
 
 <ol>
 <li><strong>通知调用</strong></li>
 </ol>
-<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">KhalaNotify</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://double?test=666"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span>
-   <span class="c1">// value is [Any]</span>
+<pre class="highlight swift"><code>   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+
+      <span class="kd">func</span> <span class="nf">vc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+           <span class="k">return</span> <span class="kt">UIViewController</span><span class="p">()</span>
+       <span class="p">}</span>
+
+      <span class="kd">func</span> <span class="nf">doSomething</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="p">{</span>
+       <span class="k">return</span> <span class="n">description</span>
+       <span class="p">}</span>
+
+   <span class="p">}</span>
+
+   <span class="kd">@objc(BModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">BModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+
+      <span class="kd">func</span> <span class="nf">vc</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">description</span>
+       <span class="p">}</span>
+
+      <span class="kd">func</span> <span class="nf">doSomething</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="p">{</span>
+           <span class="nf">print</span><span class="p">(</span><span class="s">"BModule: "</span><span class="p">,</span><span class="n">info</span><span class="p">[</span><span class="s">"value"</span><span class="p">])</span>
+       <span class="p">}</span>
+
+   <span class="p">}</span>
+
+   <span class="c1">// AModule 与 BModule 实例化,并缓存</span>
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule"</span><span class="p">)?</span><span class="o">.</span><span class="nf">regist</span><span class="p">()</span>
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://BModule"</span><span class="p">)?</span><span class="o">.</span><span class="nf">regist</span><span class="p">()</span>
+
+   <span class="c1">// 通知</span>
+   <span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">KhalaNotify</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://doSomething?value=888"</span><span class="p">)?</span><span class="o">.</span><span class="nf">call</span><span class="p">()</span>
+   <span class="nf">print</span><span class="p">(</span><span class="n">value</span> <span class="p">??</span> <span class="s">""</span><span class="p">)</span>
+
+   <span class="c1">// Print</span>
+   <span class="c1">// [&lt;BModule: 0x60000242f230&gt;, &lt;AModule: 0x600002419d10&gt;]</span>
 </code></pre>
 
 <ol>
-<li><strong>Rewrite</strong></li>
+<li><strong>重定向</strong></li>
 </ol>
 
 <ul>
 <li><strong>使用</strong></li>
-<li><strong>自定义</strong></li>
 </ul>
+<pre class="highlight plaintext"><code> 1. 构造规则:
+
+ ```swift
+ let filter = RewriteFilter {
+  if $0.url.host == "AModule" {
+    var urlComponents = URLComponents(url: $0.url, resolvingAgainstBaseURL: true)!
+    urlComponents.host = "BModule"
+    $0.url = urlComponents.url!
+  }
+    return $0
+ }
+ ```
+
+ 2. 添加至全局规则池
+
+ ```swift
+ Khala.rewrite.filters.append(filter)
+ ```
+
+ 3. 请求调用
+
+ ```swift
+ let value = Khala(str: "kl://AModule/doSomething")?.call()
+ print(value ?? "nil")
+ /// Print
+ // &lt;BModule: 0x6000026e2800&gt;
+ ```
+</code></pre>
+
+<ul>
+<li><strong>自定义重定向</strong></li>
+</ul>
+<pre class="highlight plaintext"><code> 1. 继承 `KhalaRewrite` 协议.
+
+ 2. 替换重定向模块
+
+    ```swift
+    Khala.rewrite = CustomRewrite()
+    ```
+</code></pre>
 
 <ol>
-<li><strong>History</strong></li>
+<li><strong>日志模块</strong></li>
+</ol>
+
+<p>日志模块默认为<strong>关闭</strong>状态,如需开启:</p>
+<pre class="highlight swift"><code>   <span class="kt">Khala</span><span class="o">.</span><span class="n">isEnabledLog</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre>
+
+<ul>
+<li><p><strong>使用</strong>(默认版本):</p>
+
+<p>文件路径: <code>/Documents/khala/logs/</code></p>
+
+<p>文件内容:  日期 + 时间 + URL + 参数</p>
+<pre class="highlight verilog"><code> <span class="mi">2018</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">02</span><span class="o">:</span><span class="mi">06</span><span class="o">:</span><span class="mi">54</span>  <span class="n">kl</span><span class="o">:</span><span class="c1">//SwiftClass/double?  {"test":"666"}
+</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">01</span> <span class="mi">02</span><span class="o">:</span><span class="mi">06</span><span class="o">:</span><span class="mi">54</span>  <span class="n">kl</span><span class="o">:</span><span class="c1">//SwiftClass/double  {"test":"666"}
+</span></code></pre></li>
+<li><p><strong>自定义日志</strong></p></li>
+</ul>
+<pre class="highlight plaintext"><code> 1. 继承 `KhalaHistory` 协议.
+
+ 2. 替换日志模块
+
+    ```swift
+    Khala.history = CustomHistory()
+    ```
+</code></pre>
+
+<ol>
+<li><strong>提前注册路由类</strong></li>
+</ol>
+
+<p>该部分内容适合第三方服务模块,在 AppDelegate 中提前注册路由类.</p>
+<pre class="highlight swift"><code>   <span class="c1">/// 全量注册 KhalaProtocol 路由类需要提前注册的路由类</span>
+   <span class="c1">/// 需要遵从`KhalaProtocol`协议, 并在合适的时机调用.</span>
+   <span class="kt">Khala</span><span class="o">.</span><span class="nf">registWithKhalaProtocol</span><span class="p">()</span>
+   <span class="c1">/// 单独注册</span>
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule"</span><span class="p">)?</span><span class="o">.</span><span class="nf">regist</span><span class="p">()</span>
+</code></pre>
+
+<blockquote>
+<p><a href="https://linhay.github.io/Khala/Protocols.html#/c:@M@Khala@objc(pl)KhalaProtocol"><code><a href="Protocols.html#/c:@M@Khala@objc(pl)KhalaProtocol">KhalaProtocol</a></code></a>协议</p>
+</blockquote>
+
+<p><strong>示例:</strong></p>
+<pre class="highlight swift"><code>   <span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">KhalaProtocol</span> <span class="p">{</span>
+    <span class="nf">init</span><span class="p">(){</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="c1">//doSomething</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="kd">@objc(BModule)</span> <span class="kd">@objcMembers</span>
+   <span class="kd">class</span> <span class="kt">BModule</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">KhalaProtocol</span> <span class="p">{</span>
+    <span class="nf">init</span><span class="p">(){</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="c1">//doSomething</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+
+   <span class="c1">/// 全量注册 KhalaProtocol 路由类需要提前注册的路由类</span>
+   <span class="c1">/// 需要遵从`KhalaProtocol`协议, 并在合适的时机调用.</span>
+   <span class="kt">Khala</span><span class="o">.</span><span class="nf">registWithKhalaProtocol</span><span class="p">()</span>
+   <span class="c1">/// 单独注册</span>
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://AModule"</span><span class="p">)?</span><span class="o">.</span><span class="nf">regist</span><span class="p">()</span>
+   <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kl://BModule"</span><span class="p">)?</span><span class="o">.</span><span class="nf">regist</span><span class="p">()</span>
+</code></pre>
+
+<blockquote>
+<p>ps: 使用时启动更为推荐.</p>
+</blockquote>
+
+<ol>
+<li><strong>其他</strong></li>
 </ol>
 
 <ul>
-<li><strong>使用</strong></li>
-<li><strong>自定义</strong></li>
+<li>当url第一次定位至某一个路由类时,该类的实例将被缓存至 <a href="https://linhay.github.io/Khala/Classes/PseudoClass.html#/c:@M@Khala@objc(cs)PseudoClass(cpy)cache"><strong>PseudoClass.cache</strong></a> 中, 以提高二次查找性能.该属性权限为 <code>public</code>,开发者可以选择惬当的时机修改.</li>
+<li>某个路由类实例化时,该类中的函数列表将被缓存至 <a href="https://linhay.github.io/Khala/Classes/PseudoClass.html#/c:@M@Khala@objc(cs)PseudoClass(py)methodLists"><strong>PseudoClass().methodLists</strong></a>中, 以提高查找性能.该属性权限为 <code>public</code>,开发者可以选择惬当的时机修改.或移除位于 <a href="https://linhay.github.io/Khala/Classes/PseudoClass.html#/c:@M@Khala@objc(cs)PseudoClass(cpy)cache"><strong>PseudoClass.cache</strong></a> 中的路由类缓存.</li>
 </ul>
 
 <ol>
-<li><strong>PseudoClass</strong></li>
+<li><p><strong>断言机制</strong></p>
+
+<p>为方便开发者使用,添加了部分场景下断言机制,示例:</p>
+<pre class="highlight verilog"><code><span class="n">khala</span><span class="o">.</span><span class="n">iOS</span> <span class="n">Fatal</span> <span class="nb">error</span><span class="o">:</span> <span class="p">[</span><span class="n">Khala</span><span class="p">]</span> <span class="err">未在</span><span class="p">[</span><span class="n">AModule</span><span class="p">]</span><span class="err">中匹配到函数</span><span class="p">[</span><span class="n">server</span><span class="p">]</span><span class="o">,</span> <span class="err">请查看函数列表</span><span class="o">:</span>
+<span class="mi">0</span><span class="o">:</span> <span class="n">init</span>
+<span class="mi">1</span><span class="o">:</span> <span class="n">doSomething</span><span class="o">:</span>
+<span class="mi">2</span><span class="o">:</span> <span class="n">vc</span>
+</code></pre>
+
+<p><strong>关闭断言</strong>:</p>
+<pre class="highlight swift"><code><span class="kt">Khala</span><span class="o">.</span><span class="n">isEnabledAssert</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre></li>
+<li><p><strong>扩展机制</strong></p>
+
+<p><strong><em>khala</em></strong> 库中提供了一个空置的类[<strong><em>KhalaStore</em></strong>]用于盛放<strong>路由函数</strong>对应的本地函数.来简化本地调用复杂度的问题.</p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">KhalaStore</span> <span class="p">{</span> 
+ <span class="kd">class</span> <span class="kd">func</span> <span class="nf">aModule_server</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">Khala</span><span class="p">(</span><span class="nv">str</span><span class="p">:</span> <span class="s">"kf://AModule/server"</span><span class="p">,</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="s">"value"</span><span class="p">:</span> <span class="n">value</span><span class="p">])</span><span class="o">!.</span><span class="nf">call</span><span class="p">()</span> <span class="k">as!</span> <span class="kt">Int</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">@objc(AModule)</span> <span class="kd">@objcMembers</span>
+<span class="kd">class</span> <span class="kt">AModule</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+ <span class="kd">func</span> <span class="nf">server</span><span class="p">(</span><span class="n">_</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">info</span><span class="p">[</span><span class="s">"value"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">Int</span> <span class="p">??</span> <span class="mi">0</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="kt">KhalaStore</span><span class="o">.</span><span class="nf">aModule_server</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="mi">46</span><span class="p">)</span>
+</code></pre>
+
+<blockquote>
+<p>ps: KhalaStore 扩展文件建议统一放置.</p>
+</blockquote></li>
 </ol>
+<h2 id='' class='heading'>文档</h2>
 
 <ul>
-<li><p><strong>PseudoClass.cache</strong></p>
-
-<p>路由类初始化后会被添加至该属性中缓存,以减少查找与实例化这部分性能.</p>
-
-<p>你可以使用该属性<strong>释放指定或全部路由类</strong>.</p></li>
-<li><p><strong>PseudoClass().instance</strong></p>
-
-<p>路由类实例.</p></li>
-<li><p><strong>PseudoClass().methodLists</strong></p>
-
-<p>路由类实例中函数列表, 路由函数查询只会查询此列表中的函数.</p>
-
-<p>​</p></li>
+<li><a href="https://linhay.github.io/Khala/"><strong>API Reference</strong></a> - 更详细的参考api文档.</li>
+<li><a href="https://www.linhey.com/2018/12/10/%5B2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%5DiOS%20%E8%B7%AF%E7%94%B1%E8%AE%BE%E8%AE%A1/"><strong>iOS路由(Khala)设计</strong></a> - khala的选型与模组化中的角色担当.</li>
 </ul>
-<h2 id='author' class='heading'>Author</h2>
+<h2 id='' class='heading'>参考与致谢</h2>
+
+<ul>
+<li><a href="https://github.com/casatwy/CTMediator"><strong>CTMediator</strong></a>: 由 <a href="https://github.com/casatwy"><strong><em>Casa</em></strong></a> 创建的 <code>Target-Action</code> 形式解耦路由.</li>
+<li><a href="https://github.com/linhay/Routable"><strong>Routable</strong></a>: <em>khala</em>的前身, 正式投入生产环境迭代2年.</li>
+</ul>
+<h2 id='' class='heading'>作者</h2>
 
 <p>linhay, <a href="mailto:is.linhay@outlook.com">is.linhay@outlook.com</a></p>
 <h2 id='license' class='heading'>License</h2>
